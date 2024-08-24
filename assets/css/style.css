@@ -1,0 +1,81 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: #00FF00; /* Green color for text */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+/* Container Styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh; /* Ensure container takes full height */
+    box-sizing: border-box;
+}
+
+/* Background Animation */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4MCIgaGVpZ2h0PSIxMjgiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiBmaWxsPSJibGFjayIgIHN0cm9rZT0iIzAwMEYwMCIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGF5ZXI9ImF1dG8iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy84MjAvc3ZnIj4KICA8ZyBzdHJva2UtbGluZWNhcGU9InBhdGgiPgoJPHBhdGggZD0iTTEyOCAwIEwgMCAwIEwgMCAxMjggMTI4IiBzdHJva2UtbGF5ZXI9ImF1dG8iIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmUtb3BhY2l0eT0iMHciLz4KPC9nPjwvc3ZnPg==') repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Book List Styles */
+.book-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.book-item {
+    margin: 20px 0;
+    border: 1px solid #00FF00;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.book-item img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border: 2px solid #00FF00;
+}
+
+.book-item p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.download-button {
+    background-color: #00FF00;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #00CC00;
+}
